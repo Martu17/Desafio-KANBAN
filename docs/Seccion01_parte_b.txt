@@ -1,0 +1,9 @@
+HTML (HyperText Markup Lenguage) se utiliza para desarrollo web, para estructurar las paginas como por ejemplo con párrafos, tablas de datos o imagenes.
+
+XML (eXtensible Markup Lenguage) se utiliza para definir y estructurar datos y poder compartirlos de manera que sea legible tanto para una maquina como para un humano
+
+CSV (Comma Separated Values) tambien utilizado para intercambiar datos entre sistemas y aplicaciones, es un formato de archivo para almacenar datos tabulares (columnas separadas por comas o punto y coma o tabulaciones) como los de un excel o una base de datos.
+
+JSON (JavaScript Object Notation) formato de texto que es parte de JS pero que se utiliza para acceso, almacenamiento e intercambio de datos. Utiliza la notacion clave-valor para mostrar los datos 
+
+YAML (Yet Another Markup Language) o (YAML Ain't Markup Language) Lenguaje de declaración de datos, se utiliza para almacenar y transimitir informacion de forma sencilla y legible para los humanos.

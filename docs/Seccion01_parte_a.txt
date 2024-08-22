@@ -1,0 +1,17 @@
+CRM (Customer Relationship Management) es una gestion integral que se basa en la relacion con el cliente. 
+
+ERP (Enterprise Resource Planning) gestion de actividades diarias de una empresa, como facturacion, ventas, gestion de personal. Es muy utilizado y es clave para la correcta gestion de una empresa.
+
+GRP (Government Resource Planning) herramienta que utilizan entes gubernamentales de similar forma que un ERP pero para cubrir necesidades especificas de organismos publicos.
+
+MRP (Materials Requeriment Planing) control de materiales para produccion, pedidos para satisfacer demanda, planificiacion de requisitos de materiales
+
+SCM (Supply Chain Managment) Gestión de cadena de suministro, se define como el ciclo de vida de un producto o servicio, esta gestion permite hacer una trazabilidad del mismo con el objetivo de obtener datos que luego puedan usarlos para optimizar operaciones
+
+En general todos estos sistemas o software se utilizan en alguna o varias areas de una empresa, creando una solución integral con funcionalidades muy importantes que ayudan a automatizar y optimizar procesos, acceder facilmente a información importante, crear reportes, y generar trazabilidad en los datos que puede ayudar a predecir comportamientos futuros.
+
+Algunos ejemplos:
+- Memory, ofrece ERP con funcionalidades como facturación electronica, cobranzas, compras, stock, estado de cuenta, ventas. 
+- Salesforce brinda un servicio de CRM abarcando funcionalidades como herramientas de productividad, Funciones avanzadas de generación de reportes, almacenamiento de datos por usuario, administración de tareas, fuente de actividades, seguimiento de oportunidades.
+- Oracle, ademas de ofrecer ERP, tambien tiene dentro de sus productos SCM con planificacion de de la cadena de suministro, gestion de inventario, mantenimiento, gestion de pedido entre otras
+- Odoo, un software de gestion que ofrece servicios como inventario, CRM, ventas, contabilidad.
