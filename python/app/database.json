@@ -1,1 +1,7 @@
-{"car_car": [], "car_seat": []}
+{
+    "car_car": [],
+    "car_seat": [],
+    "detalle_recibos": [],
+    "funcionarios": [],
+    "recibos": []
+}
