@@ -2,7 +2,7 @@ from typing import Any
 import json
 
 def load_database():
-  database = json.load(open('app\database.json'))
+  database = json.load(open('app/database.json'))
   for model in database:
     database[model].sort(key=lambda record: record['id'])
   return database

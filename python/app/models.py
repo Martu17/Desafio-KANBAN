@@ -1,16 +1,26 @@
 import json
 from typing import List, Dict, Any
 from .columns import Column
+import os
+
+def get_database_path():
+    # Esta función obtiene la ruta absoluta al archivo database.json
+    return os.path.join(os.path.dirname(__file__), 'database.json')
 
 def load_database():
-  database = json.load(open('app\database.json'))
-  for model in database:
-    database[model].sort(key=lambda record: record['id'])
-  return database
+    # Utiliza la ruta absoluta para cargar la base de datos
+    database_path = get_database_path()
+    with open(database_path, 'r') as file:
+        database = json.load(file)
+    for model in database:
+        database[model].sort(key=lambda record: record['id'])
+    return database
 
 def update_database(new: dict):
-  with open('app\database.json', 'w') as database:
-    json.dump(new, database)
+    # Utiliza la ruta absoluta para actualizar la base de datos
+    database_path = get_database_path()
+    with open(database_path, 'w') as file:
+        json.dump(new, file, indent=4)
 
 class Model:
   _table: str
