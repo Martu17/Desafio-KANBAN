@@ -1,0 +1,5 @@
+El patrón de Arquitectura de Diseño de Software
+conocido como Modelo Vista Controlador (MVC) es un patron de diseño que separa responsabilidades en tres componentes 
+principales Modelo, Vista y Controlador. Es el patron de diseño mas utilizado para el desarrollo de codigo.
+Se utiliza para poder organizar la logica de las soluciones a implementar, para facilitar la organizacion, 
+mantenibilidad, escalabilidad y reutilizacion del codigo. Se puede utilizar en varios lenguajes de programacion.

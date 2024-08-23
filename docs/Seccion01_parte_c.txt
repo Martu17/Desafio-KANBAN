@@ -1,0 +1,6 @@
+Web services, es un servicio que permite la comunicacion entre dos sistemas o aplicaciones con el fin de intercambiar 
+informacion utilizando protocolos y estandares como HTTPS para asegurar la flexibilidad e interoperabilidad
+
+API REST es flexible es utilizable en aplicaciones web que necesitan ser ligeras, 
+por otro lado SOAP Server es mas estructurado y rigido, tiene mas nivel en seguridad, 
+es mas utulizado para funciones empresariales que necesitan formalidad y estandares definidos.
