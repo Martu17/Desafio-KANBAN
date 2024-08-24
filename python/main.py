@@ -66,8 +66,33 @@ for recibo in Recibos.records():
     recibo.delete()
 print(f"Se han eliminado los recibos para la cedula {cedula_eliminar}")
 
+# Modificar el nombre y cargo de un funcionario a partir de su cédula
+print("Ingrese la cedula del funcionario que desea modificar")
+cedula_modificar = int(input())
 
+funcionario_a_modificar = None
 
+for funcionario in Funcionarios.records():
+  if cedula_modificar == funcionario.cedula:
+    funcionario_a_modificar = funcionario
+    
+if funcionario_a_modificar:
+  print("Ingrese el nuevo nombre del funcionario")
+  nuevo_nombre = input()
+  
+  print("Ingrese el nuevo cargo del funcionario")
+  nuevo_cargo = input()
+  
+  funcionario_a_modificar.update({'nombre':nuevo_nombre, 'cargo':nuevo_cargo})
+  
+  print(f"Se han actualizado los datos del funcionario con cedula {cedula_modificar}")
+    
+
+'''
+print(car.read())
+car.update({'color': 'Azul', 'open_ceiling': True})
+print(car.read())
+'''
 '''import app
 
 print('\napp.env almacena el entorno de la aplicacion, desde donde se puede acceder a la definición de los modelos de la siguiente forma:')
