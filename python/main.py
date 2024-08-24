@@ -1,11 +1,14 @@
 import app
 import csv
+import os
+
+datos_path = os.path.join(os.path.dirname(__file__), 'datos')
 
 Funcionarios = app.env['funcionarios']
 funcionarios = []
 
 # Leer los datos de funcionarios del archivo .csv y los guarda en el database.json
-with open('/Users/martu/Desafio-KANBAN/python/datos/Funcionarios.csv', mode='r', newline='') as file:
+with open(f'{datos_path}/Funcionarios.csv', mode='r', newline='') as file:
     datos_funcionarios = csv.reader(file, delimiter=',')
     for row in datos_funcionarios:
         funcionario = Funcionarios.create({
@@ -23,7 +26,7 @@ print(funcionarios)
 Detalle = app.env['detalle_recibos']
 detalle_recibos = []
 # Leer los datos del detalle de los recibos del archivo .csv y los guarda en el database.json
-with open('/Users/martu/Desafio-KANBAN/python/datos/Detalle recibos.csv', mode='r', newline='') as file:
+with open(f'{datos_path}/Detalle recibos.csv', mode='r', newline='') as file:
     datos_detalle = csv.reader(file, delimiter=',')
     for row in datos_detalle:
         detalle = Detalle.create({
@@ -41,7 +44,7 @@ print(detalle_recibos)
 Recibos = app.env['recibos']
 recibos = []
 # Leer los datos de recibos del archivo .csv y los guarda en el database.json
-with open('/Users/martu/Desafio-KANBAN/python/datos/Recibos.csv', mode='r', newline='') as file:
+with open(f'{datos_path}/Recibos.csv', mode='r', newline='') as file:
     datos_recibos = csv.reader(file, delimiter=',')
     for row in datos_recibos:
         recibo = Recibos.create({
