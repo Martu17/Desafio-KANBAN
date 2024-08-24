@@ -6,8 +6,7 @@ class Detalle(models.Model):
 
   # columnas de la tabla (la columna ID es implícita)
   _columns = {
-    'id': columns.Integer('Id'),
     'tipo_concepto': columns.VarChar('Tipo de concepto'),
-    'cantidad': columns.VarChar('Cantidad'),
+    'cantidad': columns.Integer('Cantidad'),
     'monto': columns.Integer('Monto')
   }

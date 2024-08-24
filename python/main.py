@@ -1,4 +1,64 @@
 import app
+import csv
+
+Funcionarios = app.env['funcionarios']
+funcionarios = []
+
+# Leer los datos de funcionarios del archivo .csv y los guarda en el database.json
+with open('/Users/martu/Desafio-KANBAN/python/datos/Funcionarios.csv', mode='r', newline='') as file:
+    datos_funcionarios = csv.reader(file, delimiter=',')
+    for row in datos_funcionarios:
+        funcionario = Funcionarios.create({
+            'cedula': int(row[0]),
+            'nombre': row[1],
+            'cargo': row[2],
+            'sueldo': int(row[3]),
+            'fecha_ingreso': row[4]
+        })
+        funcionarios.append(funcionario)
+
+# Imprime los funcionarios creados
+print(funcionarios)
+
+Detalle = app.env['detalle_recibos']
+detalle_recibos = []
+# Leer los datos del detalle de los recibos del archivo .csv y los guarda en el database.json
+with open('/Users/martu/Desafio-KANBAN/python/datos/Detalle recibos.csv', mode='r', newline='') as file:
+    datos_detalle = csv.reader(file, delimiter=',')
+    for row in datos_detalle:
+        detalle = Detalle.create({
+            'tipo_concepto': row[0],
+            'cantidad': row[1],
+            'monto': int(row[2])
+        })
+        detalle_id = detalle.id
+        detalle_recibos.append(detalle)
+    
+
+# Imprime los funcionarios creados
+print(detalle_recibos)
+
+Recibos = app.env['recibos']
+recibos = []
+# Leer los datos de recibos del archivo .csv y los guarda en el database.json
+with open('/Users/martu/Desafio-KANBAN/python/datos/Recibos.csv', mode='r', newline='') as file:
+    datos_recibos = csv.reader(file, delimiter=',')
+    for row in datos_recibos:
+        recibo = Recibos.create({
+            'anio_mes': row[0],
+            'tipo_recibo': row[1],
+            'cedula_funcionario': int(row[2]),
+            'nombre_empleador': row[3],
+            'detalle_recibo_id': row[4]
+        })
+        recibos.append(recibo)
+
+# Imprime los funcionarios creados
+print(recibos)
+
+
+
+'''import app
 
 print('\napp.env almacena el entorno de la aplicacion, desde donde se puede acceder a la definición de los modelos de la siguiente forma:')
 Car = app.env['car_car']
@@ -43,4 +103,4 @@ for seat in all_seats:
   seat.delete()
 car.delete()
 print(Car.records())
-print(app.env['car_seat'].records())
+print(app.env['car_seat'].records())'''
