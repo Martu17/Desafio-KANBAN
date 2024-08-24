@@ -56,6 +56,16 @@ with open('/Users/martu/Desafio-KANBAN/python/datos/Recibos.csv', mode='r', newl
 # Imprime los funcionarios creados
 print(recibos)
 
+# Eliminar un recibo de sueldo de un funcionario a partir de su cedula
+
+print("Ingrese la cedula del funcionario para eliminar su recibo")
+cedula_eliminar = int(input())
+
+for recibo in Recibos.records():
+  if cedula_eliminar == recibo.cedula_funcionario:
+    recibo.delete()
+print(f"Se han eliminado los recibos para la cedula {cedula_eliminar}")
+
 
 
 '''import app
